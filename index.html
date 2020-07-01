@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grade Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="css/grade.css">
+</head>
+<body>
+
+
+
+
+
+
+<!-- Student Grade Calculator
+
+Each student has to enter respective subject marks.
+1. Find Total?
+2. Find Percentage?
+3. Find Grade?
+4. Check Pass or Fail.
+5. Combined all and show Output.
+ -->
+ <div class="background">
+  <div class="container ">
+    <div class="screen">
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <div class="animated infinite tada">
+              SSC   <br>MAHARASTRA BOARD
+              Student <br> Grade <br> Calcy
+            </div>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group input-group ">
+              <input type="text" class="app-form-control" placeholder="English" id="eng" maxlength="2">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control input-group"   placeholder="Hindi" id="hind" maxlength="2">
+            </div>
+             <div class="app-form-group">
+              <input  type="text"  class="app-form-control input-group"   placeholder="Marathi" id="mar" maxlength="2">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control input-group"   placeholder="Science" id="sci"maxlength="2" >
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control input-group"   placeholder="Maths" id="mats" maxlength="2">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control input-group"   placeholder="Social Science" id="ss"maxlength="2" >
+            </div>
+            
+            <div > 
+              <input type="button" name="" value="showPercentage" class="app-form-button" onclick=" calcy()">
+            </div>            
+          </div>
+      </div>
+
+    </div>
+      <div class="app-form-group showdata">
+              <p id="showData" >  </p>
+              <p class="showdata animated infinite pulse" id="status"></p>
+  </div>
+</div>
+<div id="table" class="">
+  <table id="maintable" class=" table table-bordered table-dark table-hover ">
+    <tr>
+      <th>SUBJECTS</th>
+      <th>MARKS</th>
+    </tr>
+    <tr>
+      <td>English</td>
+      <td id="engmarks"></td>
+    </tr>
+    <tr>
+      <td>Hindi</td>
+      <td id="hindmarks"></td>
+    </tr>
+    <tr>
+      <td>Marathi</td>
+      <td id="marmarks"></td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td id="scimarks"></td>
+    </tr>
+    <tr>
+      <td>Maths</td>
+      <td id="mathsmarks"></td>
+    </tr>
+    <tr>
+      <td>Social Science</td>
+      <td id="ssmarks"></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td id="total"></td>
+    </tr>
+    <tr>
+      <td>Percentage</td>
+      <td id="percentage"></td>
+    </tr>
+    <tr>
+      <td>Grade</td>
+      <td id="grade"></td>
+    </tr>
+    <tr>
+      <td>RESULT</td>
+      <td id="result"></td>
+    </tr>
+
+    
+  </table>
+<div><input type="button" value="Print" onclick="window.print()" id="printbtn" class="btn btn-light btn-lg" /></div>
+  
+</div>
+
+
+<script type="text/javascript" src="javascript.js"></script>
+
+</body>
+</html>
